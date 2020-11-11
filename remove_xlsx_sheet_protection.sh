@@ -1,3 +1,6 @@
+echo 'Install sh requirements...'
+sudo apt-get install zip unzip
+
 temp_dir=$(echo $1 | cut -f 1 -d '.')
 echo '\nUnzipping '"$1"' to '"$temp_dir"' ...\n'
 unzip $1 -d $temp_dir 
